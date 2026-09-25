@@ -9,6 +9,7 @@ typedef struct {
     uint8_t state;
     uint8_t rising_edge;
     uint8_t falling_edge;
+    bool active_low;
 } Debouncer;
 
 void debouncer_init(Debouncer *d);
