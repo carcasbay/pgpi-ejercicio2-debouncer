@@ -18,3 +18,4 @@ void debouncer_update(Debouncer *d, uint8_t raw_input);
 void debouncer_reset(Debouncer *d);
 
 #endif // DEBOUNCER_H
+/* error: linea no deseada */
