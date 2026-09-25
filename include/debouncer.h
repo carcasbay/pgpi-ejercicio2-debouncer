@@ -10,9 +10,11 @@ typedef struct {
     uint8_t rising_edge;
     uint8_t falling_edge;
     bool active_low;
+    uint32_t reset_count;
 } Debouncer;
 
 void debouncer_init(Debouncer *d);
 void debouncer_update(Debouncer *d, uint8_t raw_input);
+void debouncer_reset(Debouncer *d);
 
 #endif // DEBOUNCER_H
