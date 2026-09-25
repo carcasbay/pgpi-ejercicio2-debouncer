@@ -1,0 +1,8 @@
+build/
+test_debouncer
+informe.txt
+*.o
+*.tar.gz
+*.zip
+.DS_Store
+bin/
