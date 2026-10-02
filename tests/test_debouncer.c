@@ -3,7 +3,7 @@
 
 int main(void) {
     Debouncer d;
-    debouncer_init(&d);
+    debouncer_init(&d, false);
 
     uint8_t inputs[] = {0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0};
     int total = sizeof(inputs) / sizeof(inputs[0]);

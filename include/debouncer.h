@@ -13,7 +13,7 @@ typedef struct {
     uint32_t reset_count;
 } Debouncer;
 
-void debouncer_init(Debouncer *d);
+void debouncer_init(Debouncer *d, bool active_low);
 void debouncer_update(Debouncer *d, uint8_t raw_input);
 void debouncer_reset(Debouncer *d);
 

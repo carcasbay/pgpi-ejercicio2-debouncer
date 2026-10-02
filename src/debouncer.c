@@ -1,13 +1,14 @@
 #include <stddef.h>
 #include "debouncer.h"
 
-void debouncer_init(Debouncer *d) {
+void debouncer_init(Debouncer *d, bool active_low) {
     if (d == NULL) return;
     d->shift_reg = 0x0000;
     d->state = 0;
     d->rising_edge = 0;
     d->falling_edge = 0;
     d->active_low = active_low;
+    d->reset_count = 0;
 }
 
 void debouncer_update(Debouncer *d, uint8_t raw_input) {
